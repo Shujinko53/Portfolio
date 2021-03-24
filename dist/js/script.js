@@ -1,11 +1,28 @@
 const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      closeBtn = document.querySelector('.menu__close');
+	  menu = document.querySelector('.menu'),
+	  closeBtn = document.querySelector('.menu__close'),
+	  overlay = document.querySelector('.overlay');
+
+
+const isPressEsc = function (evt) {
+	return evt.keyCode === 27;
+};
 
 hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
+	menu.classList.add('active');
 });
 
-closeBtn.addEventListener('click', () => {
-    menu.classList.remove('active');
+window.addEventListener('keydown', (evt) => {
+	if (isPressEsc(evt)) {
+		menu.classList.remove('active');
+	}
 });
+
+function menuCloser(target, event) {
+	target.addEventListener(event, () => {
+		menu.classList.remove('active');
+	});
+}
+
+menuCloser(closeBtn, 'click');
+menuCloser(overlay, 'click');

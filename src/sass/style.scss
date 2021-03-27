@@ -18,7 +18,7 @@
 .divider {
     width: 69px;
     height: 3px;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
     
     background-color: $main_color;
 }
@@ -29,3 +29,4 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';

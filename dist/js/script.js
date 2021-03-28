@@ -3,7 +3,6 @@ const hamburger = document.querySelector('.hamburger'),
 	  closeBtn = document.querySelector('.menu__close'),
 	  overlay = document.querySelector('.overlay');
 
-
 const isPressEsc = function (evt) {
 	return evt.keyCode === 27;
 };
@@ -26,3 +25,12 @@ function menuCloser(target, event) {
 
 menuCloser(closeBtn, 'click');
 menuCloser(overlay, 'click');
+
+// skill counter
+
+const counters = document.querySelectorAll('.skills__ratings-counter'),
+	  lines = document.querySelectorAll('.skills__ratings-line span');
+
+counters.forEach((item, i) => {
+	lines[i].style.width = item.innerHTML;
+});

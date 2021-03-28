@@ -4,6 +4,7 @@
     &__wrapper {
         display: grid;
         margin-top: 60px;
+		padding: 0 50px;
         grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 345px);
         grid-auto-rows: minmax(45px, auto);
         row-gap: 15px;

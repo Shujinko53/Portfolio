@@ -15,7 +15,6 @@
         display: grid;
         grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
         row-gap: 5px;
-        justify-content: space-between;
         padding-left: 25px;
 
         @include before_circle;

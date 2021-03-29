@@ -1,0 +1,43 @@
+.policy {
+    padding: 20px 200px 20px 50px;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    &__title {
+        padding-left: 40px;
+        
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    ol {
+        list-style: none;
+        counter-reset: li;
+        padding: revert;
+
+        li:before {
+            content: counters(li, ".") ". ";
+            counter-increment: li;
+        }
+    }
+
+    &__item  {
+        margin-bottom: 50px;
+
+        p {
+            margin: 0;
+        }
+
+        b {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
+    
+}

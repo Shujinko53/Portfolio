@@ -25,6 +25,18 @@
             column-gap: 15px;
         }
     }
+
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 400px);
+            column-gap: 80px;
+            padding: 60px 40px 0 40px;
+        }
+
+        .divider {
+            margin-top: 15px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -51,6 +63,24 @@
         &__skill {
             grid-template-columns: 40px 320px;
             column-gap: 20px;
+        }
+    }
+
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 340px);
+            column-gap: 20px;
+            padding: 50px 10px 0 10px;
+        }
+
+        &__item {
+            &-head {
+                padding: 40px 0 0 100px
+            }
+
+            &:before {
+                top: 60px;
+            }
         }
     }
 }
@@ -92,6 +122,34 @@
             grid-template-columns: 40px 200px;
             column-gap: 20px;
         }
+
+        &__descr {
+            .divider {
+                margin: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .resume {
+        padding-top: 40px;
+
+        &__wrapper {
+            grid-template: auto auto / 1fr;
+            row-gap: 30px;
+            grid-auto-rows: auto;
+            padding: 50px 10px 0 10px;
+        }
+
+        &__item {
+            &-head {
+                padding: 15px 0 0 100px
+            }
+
+            &:before {
+                top: 35px;
+            }
+        }
     }
 }
 
@@ -108,7 +166,12 @@
 
         &_fz36 {
             font-size: 24px;
+            line-height: 36px;
         }
+    }
+
+    .divider {
+        margin-top: 15px;
     }
 
     .hamburger {
@@ -137,6 +200,15 @@
 
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+
+    .resume {
+        padding-top: 40px;
+
+        &__wrapper {
+            grid-template: auto auto / 1fr;
+            padding: 50px 0 0 0;
         }
     }
 }

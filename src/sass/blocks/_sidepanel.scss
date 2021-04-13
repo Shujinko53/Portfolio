@@ -10,6 +10,16 @@
     align-items: center;
     height: 340px;
 
+    &__link {
+        &-vk,
+        &-tg {
+            img {
+                transform: rotate(-90deg);
+            }
+        }
+        
+    }
+
     &__divider {
         width: 2px;
         height: 70px;

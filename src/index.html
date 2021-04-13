@@ -45,13 +45,13 @@
 </head>
 <body>
     <aside class="sidepanel">
-        <a href="#" class="sitepanel__link">
-            <img src="icons/social/facebook.svg" alt="facebook">
+        <a href="https://vk.com/id33800043" class="sidepanel__link sidepanel__link-vk">
+            <img src="icons/social/vk.svg" alt="vkontakte">
         </a>
-        <a href="#" class="sitepanel__link">
-            <img src="icons/social/instagram.svg" alt="instagram">
+        <a href="https://t.me/shujinko53" class="sidepanel__link sidepanel__link-tg">
+            <img src="icons/social/telegram.svg" alt="telegram">
         </a>
-        <a href="#" class="sitepanel__link">
+        <a href="https://github.com/Shujinko53" class="sidepanel__link">
             <img src="icons/social/github.svg" alt="github">
         </a>
         <div class="sidepanel__divider"></div>
@@ -68,19 +68,18 @@
 
             <div class="nav">
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#expr">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#works">МОИ РАБОТЫ</a></li>
+                    <!-- <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>q -->
                 </ul>
             </div>
 
             <div class="menu__social">
                 <a href="#"><img src="icons/social/github_menu.svg" alt="github"></a>
-                <a href="#"><img src="icons/social/instagram_menu.svg" alt="instagram"></a>
-                <a href="#"><img src="icons/social/facebook_menu.svg" alt="facebook"></a>
+                <a href="#"><img src="icons/social/telegram.svg" alt="telegram"></a>
+                <a href="#"><img src="icons/social/vk.svg" alt="vkontakte"></a>
             </div>
         </div>
         <div class="overlay"></div>
@@ -93,12 +92,12 @@
             <span></span>
         </div>
         <div class="container">
-            <div class="promo__subtitle title title_fz16">Меня зовут Александра Смит</div>
+            <div class="promo__subtitle title title_fz16">Меня зовут Дмитрий Красавин</div>
             <h1 class="promo__title title title_fz48">Я web-разработчик из города Москва</h1>
 
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+                <a href="#works" class="promo__link btn">Портфолио</a>
+                <a href="#about" class="promo__link">Про меня</a>
             </div>
         </div>
     </section>
@@ -107,17 +106,18 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__img">
-                    <picture>
+                    <!-- <picture>
                         <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
                         <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
-                        <img src="img/main_photo.jpg" alt="photo">
-                    </picture>
+                        <img src="img/main-bg1.jpg" alt="photo">
+                    </picture> -->
+                    <img src="img/photo-1.jpg" alt="photo">
                 </div>
                 <div class="about__descr">
-                    <h2 class="about__title title title_fz16">Про меня</h2>
-                    <div class="about__subtitle title title_fz36">Меня зовут Александра</div>
+                    <h2 class="about__title title title_fz16" id="about">Про меня</h2>
+                    <div class="about__subtitle title title_fz36">Меня зовут Дмитрий</div>
                     <div class="divider"></div>
-                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p class="about__text">Я родился и живу в Москве since 1994г. Выпускник HTML Academy. Уже 2 года как изучаю и практикую web-development и мне это обезумно нравится.</p>
                 </div>
                 <div class="about__skills">
                     <div class="about__skill">
@@ -126,10 +126,10 @@
                         </div>
                         <div>
                             <h3 class="about__skill-title title_fz14">Web-разработка</h3>
-                            <p class="about__skill-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="about__skill-descr">Процесс создания веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера.</p>
                         </div>
                     </div>
-                    <div class="about__skill">
+                    <!-- <div class="about__skill">
                         <div class="about__skill-circle">
                             <img src="icons/about_me/mobile_dev.svg" alt="app-dev logo">
                         </div>
@@ -137,14 +137,14 @@
                         <h3 class="about__skill-title title_fz14">Разработка приложений</h3>
                         <p class="about__skill-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="about__skill">
                         <div class="about__skill-circle">
                             <img src="icons/about_me/design.svg" alt="ui/ux-design logo">
                         </div>
                         <div>
                         <h3 class="about__skill-title title_fz14">UI/UX Design</h3>
-                        <p class="about__skill-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="about__skill-descr">Проектирование любых пользовательских интерфейсов в которых удобство использования так же важно как и внешний вид.</p>
                         </div>
                     </div>
                 </div>
@@ -152,10 +152,10 @@
         </div>
     </section>
 
-	<section class="resume">
+	<section class="resume" id="expr">
 		<div class="container">
 			<h2 class="title__section-title title title_fz16">Опыт</h2>
-			<div class="title__section-subtitle title title_fz36">Чем я буду полезна</div>
+			<div class="title__section-subtitle title title_fz36">Чем я буду полезен</div>
 			<div class="divider"></div>
 
 			<div class="resume__wrapper">
@@ -169,10 +169,10 @@
 									<div class="resume__item-icon">
 										<img src="icons/experience/university.svg" alt="university">
 									</div>
-									<h4 class="resume__item-title title_fz14">МГТУ им. Н. Э. Баумана</h4>
-									<div class="resume__item-location">Диплом магистра | Москва (2014-2020)</div>
+									<h4 class="resume__item-title title_fz14">МПГУ</h4>
+									<div class="resume__item-location">Диплом бакалавра | Москва (2012-2016)</div>
 								</div>
-								<div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+								<div class="resume__item-body">Факультет: Математический, Прикладная информатика (Изначально специальность называлась "Прикладная информатика в экономике", но на 4ом курсе приставка "в экономике" отвалилась)</div>
 							</div>
 						</li>
 						<li>
@@ -181,16 +181,16 @@
 									<div class="resume__item-icon">
 										<img src="icons/experience/courses.svg" alt="university">
 									</div>
-									<h4 class="resume__item-title title_fz14">Udemy</h4>
+									<h4 class="resume__item-title title_fz14">HTML Academy</h4>
 									<div class="resume__item-location">Курсы по Web-разработке </div>
 								</div>
-								<div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+								<div class="resume__item-body">Методологии вёрстки, препроцессоры и автоматизация, адаптивные сетки, адаптивные декоративные элементы, адаптивная графика, векторная графика и оптимизация, gulp, webpack и многому другому я научился на этих курсах. </div>
 							</div>
 						</li>
 					</ul>
 				</div>
 				<div class="resume__column">
-					<h3 class="resume__column-title title title_fz20">Опыт работы</h3>
+					<h3 class="resume__column-title title title_fz20">Образование</h3>
 
 					<ul>
 						<li>
@@ -199,10 +199,10 @@
 									<div class="resume__item-icon">
 										<img src="icons/experience/developer.svg" alt="university">
 									</div>
-									<h4 class="resume__item-title title_fz14">Front-End Developer</h4>
-									<div class="resume__item-location">EPAM | Москва (2018-2019)</div>
+									<h4 class="resume__item-title title_fz14">BeOnMax</h4>
+									<div class="resume__item-location">Курс JavaScript (09.2020-11.2020)</div>
 								</div>
-								<div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+								<div class="resume__item-body">На этом курсе я изучил JavaScript, объекты, массивы, ООП, spread-операторы, классы, callback-функции, Git и GitHub, познакомился с ES6-8, научился работать с npm, Babel, Browserify, Webpack, AJAX, JSON, React и др.</div>
 							</div>
 						</li>
 						<li>
@@ -211,10 +211,10 @@
 									<div class="resume__item-icon">
 										<img src="icons/experience/designer.svg" alt="university">
 									</div>
-									<h4 class="resume__item-title title_fz14">UI/UX Designer</h4>
-									<div class="resume__item-location">Squad Team | Москва (2018)</div>
+									<h4 class="resume__item-title title_fz14">BeOnMax</h4>
+									<div class="resume__item-location">Посадка верстки и создание тем на CMS WordPress (11.2020 - 12.2020)</div>
 								</div>
-								<div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+								<div class="resume__item-body">Plugins for WP, Посадка верстки на движок CMS Wordpress, создание тем на WP, локальные сервера и phpMyAdmin, перенос сайта на онлайн хостинг, создание резервных копий сайта и перенос сайта на другой домен или хостинг.</div>
 							</div>
 						</li>
 					</ul>
@@ -272,16 +272,23 @@
                     <h3 class="skills__item-title title_fz14">Node.js</h3>
                     <p class="skills__item-text">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</p>
                 </div>
-                <div class="skills__item">
+                <!-- <div class="skills__item">
                     <div class="skills__item-img">
                         <img src="icons/skills/mongo.db.svg" alt="Mongo.db">
                     </div>
                     <h3 class="skills__item-title title_fz14">Mongo.db</h3>
                     <p class="skills__item-text">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</p>
+                </div> -->
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img class="bootstrap-img" src="icons/skills/bootstrap.svg" alt="Bootstrap 4">
+                    </div>
+                    <h3 class="skills__item-title title_fz14">Bootstrap 4</h3>
+                    <p class="skills__item-text">Библиотека, содержащая значительное количество готовых решений как для визуального оформления элементов веб-страницы, так и для создания интерактивности</p>
                 </div>
             </div>
 
-            <div class="skills__ratings">
+            <div class="skills__ratings" id="skills">
                 <div class="skills__ratings-item">
                     <h3 class="skills__ratings-title title title_fz14">Создание сайтов</h3>
                     <div class="skills__ratings-counter title_fz14">100%</div>
@@ -289,16 +296,16 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="skills__ratings-item">
+                <!-- <div class="skills__ratings-item">
                     <h3 class="skills__ratings-title title title_fz14">Создание приложений</h3>
                     <div class="skills__ratings-counter title_fz14">85%</div>
                     <div class="skills__ratings-line">
                         <span></span>
                     </div>
-                </div>
+                </div> -->
                 <div class="skills__ratings-item">
                     <h3 class="skills__ratings-title title title_fz14">Работа с данными</h3>
-                    <div class="skills__ratings-counter title_fz14">90%</div>
+                    <div class="skills__ratings-counter title_fz14">70%</div>
                     <div class="skills__ratings-line">
                         <span></span>
                     </div>
@@ -310,16 +317,16 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="skills__ratings-item">
+                <!-- <div class="skills__ratings-item">
                     <h3 class="skills__ratings-title title title_fz14">Создание дизайна</h3>
                     <div class="skills__ratings-counter title_fz14">90%</div>
                     <div class="skills__ratings-line">
                         <span></span>
                     </div>
-                </div>
+                </div> -->
                 <div class="skills__ratings-item">
                     <h3 class="skills__ratings-title title title_fz14">Soft skills</h3>
-                    <div class="skills__ratings-counter title_fz14">95%</div>
+                    <div class="skills__ratings-counter title_fz14">90%</div>
                     <div class="skills__ratings-line">
                         <span></span>
                     </div>
@@ -331,7 +338,7 @@
 	<section class="portfolio">
 		<div class="container">
 			<h2 class="title__section-title title title_fz16">Портфолио</h2>
-			<div class="title__section-subtitle title title_fz36">Мои работы</div>
+			<div class="title__section-subtitle title title_fz36" id="works">Мои работы</div>
 			<div class="divider"></div>
 
 			<div class="portfolio__wrapper">
@@ -341,23 +348,23 @@
 				<a href="https://shujinko53.github.io/Pulse_project/src/" class="portfolio__item">
 					<img src="img/works/pulse.jpg" alt="pulse">
 				</a>
-				<a href="#" class="portfolio__item">
-					<img src="img/works/bread.jpg" alt="bread">
+				<a href="https://shujinko53.github.io/Project-MaroonShop/source/" class="portfolio__item">
+					<img src="img/works/maroonshop.jpg" alt="maroonshop">
 				</a>
-				<a href="#" class="portfolio__item vertical">
-					<img src="img/works/plans.jpg" alt="plans">
+				<a href="https://shujinko53.github.io/76862-barbershop-24/" class="portfolio__item vertical">
+					<img src="img/works/borodinski.jpg" alt="borodinski">
 				</a>
-				<a href="#" class="portfolio__item">
-					<img src="img/works/ipad.jpg" alt="ipad">
+				<a href="https://shujinko53.github.io/76862-nerds-24/" class="portfolio__item">
+					<img src="img/works/nerds.jpg" alt="nerds">
 				</a>
-				<a href="#" class="portfolio__item horizonal">
-					<img src="img/works/mac.jpg" alt="mac">
+				<a href="https://shujinko53.github.io/Glamurenko_project/src/" class="portfolio__item horizonal">
+					<img src="img/works/glamurenko.jpg" alt="glamurenko">
 				</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="price">
+	<!-- <section class="price">
 		<div class="container">
 			<div class="title__section-title title title_fz16">Прайс-лист</div>
 			<div class="divider"></div>
@@ -395,9 +402,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-    <section class="contacts">
+    <!-- <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__img">
@@ -447,7 +454,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <script src="js/script.js"></script>
 </body>

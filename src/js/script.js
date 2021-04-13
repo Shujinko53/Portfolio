@@ -1,7 +1,8 @@
 const hamburger = document.querySelector('.hamburger'),
 	  menu = document.querySelector('.menu'),
 	  closeBtn = document.querySelector('.menu__close'),
-	  overlay = document.querySelector('.overlay');
+	  overlay = document.querySelector('.overlay'),
+	  menuLinks = document.querySelectorAll('.menu__link');
 
 const isPressEsc = function (evt) {
 	return evt.keyCode === 27;
@@ -25,6 +26,10 @@ function menuCloser(target, event) {
 
 menuCloser(closeBtn, 'click');
 menuCloser(overlay, 'click');
+
+menuLinks.forEach((item) => {
+	menuCloser(item, 'click');
+});
 
 // skill counter
 

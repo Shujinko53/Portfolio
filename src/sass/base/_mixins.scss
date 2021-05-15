@@ -15,7 +15,7 @@
     }
 }
 
-@mixin object-fit($fit: fill, $position: null){
+@mixin object-fit($fit: fill, $position: null) {
     -o-object-fit: $fit;
        object-fit: $fit;
     @if $position {
@@ -25,4 +25,4 @@
     } @else {
         font-family: 'object-fit: #{$fit}';
     }
-  }
+}
